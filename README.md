@@ -6,6 +6,7 @@ Web API Development using Flask and FastAPI
 
 ## Example of APIs
 
+[ ] - Dummy API using FastAPI
 [ ] - Jumia Top Trending Products
 [ ] - Konga Trending Products
 [ ] - Ecommerce Cheap Products
