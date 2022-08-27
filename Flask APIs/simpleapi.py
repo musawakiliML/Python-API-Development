@@ -15,8 +15,8 @@ def index():
     4. If first name is provided but second name is not provided: respond with "Hello, <first-name>!" 
     5. If both names are provided: respond with a question, "Is your name <fist-name> <second-name> 
     """
-
-    return jsonify({"Message": "Hello World"})
+    name = request.args.get('name')
+    return jsonify({"Message": f"Hello {name}"})
 
 
 @app.get('/bitcoin')
