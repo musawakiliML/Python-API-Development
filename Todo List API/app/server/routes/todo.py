@@ -1,8 +1,7 @@
 from fastapi import APIRouter, Path
 
 from app.server.models.todo import (
-    Todo,
-    Item
+    Todo
 )
 
 todo_router = APIRouter()
@@ -28,5 +27,5 @@ async def retrieve_single_todo(id:int = Path(..., title="The ID of the Todo to r
     for todo in todo_list:
         if todo.id == id:
             single_todo = todo
-
-    return {"response":single_todo}
+            return {"response":single_todo}
+    return {"response":"Todo with the ID doesnt exist!!!"}
