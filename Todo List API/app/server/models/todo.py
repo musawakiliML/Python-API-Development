@@ -11,11 +11,21 @@ class Todo(BaseModel):
 
     class Config:
         json_schema_extra = {
-            "Example": {
+            "example": {
                 "id": 1,
-                "Item":{
+                "item": {
                     "item":"Example Item!",
                     "status":"pending"
                 }
+            }
+        }
+
+class TodoItem(BaseModel):
+    item: str
+
+    class Config:
+        json_Schema_extra = {
+            "example": {
+                "item":"Updated item!"
             }
         }
