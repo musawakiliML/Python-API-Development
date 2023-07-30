@@ -31,7 +31,7 @@ class TodoItem(BaseModel):
     item: str
 
     class Config:
-        json_Schema_extra = {
+        json_schema_extra = {
             "example": {
                 "item":"Updated item!"
             }
@@ -45,10 +45,10 @@ class TodoItems(BaseModel):
             "example": {
                 "todos": [
                     {
-                        "items": "Example Schema 1!"
+                        "item": "Example Schema 1!"
                     },
                     {
-                        "items": "Example Schema 2!"
+                        "item": "Example Schema 2!"
                     }
                 ]
             }
